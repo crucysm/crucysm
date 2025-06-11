@@ -1,5 +1,22 @@
 @charset "utf-8";
 
+/* .gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.song-myung-regular {
+  font-family: "Song Myung", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
 /* CSS Document */
 :root {
   --accent-color: #4ba9d9;
@@ -11,23 +28,56 @@
   color: black;
 }
 
+*{
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	/* font-family: Verdana, sans-serif; */
+	box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   /* to get font size at 10px and still customizable */
   background-color: var(--bg-color);
 }
 
-header {
+/* header {
   font-family: flat-regular, Verdana, sans-serif;
   font-size: 100%;
-}
-
-.wrapper{
-  display: flex;
 }
 
 .logo{
   height: 4rem;
   width: 50rem;
   background-color: var(--accent-color);
+} */
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  border: solid 1px blue;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+  display: flex;
+  /* border: solid 1px red; */
+  width: 95vw;
+  height: 95vh;
+  content: "text";
+}
+
+.signature{
+  font-family: "Raleway", Verdana, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 180;
+  font-style: normal;
+  font-size: 3rem;
+  color: #7E7E7E;
+  pointer-events: none;
+  letter-spacing: 1rem;
+  border: solid 1px red;
 }
