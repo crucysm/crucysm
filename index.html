@@ -18,17 +18,19 @@
 </head>
 
 <body id="particles-js">
-  <!-- <img src="./img/images.png" id="logo"> -->
-  <script src="./js/particles.js"></script>
+
+    <!-- PARTICLE JS -->
+    <!-- <img src="./img/images.png" id="logo"> -->
+    <script src="./js/particles.js"></script>
     <script>
     particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trên vào đây*/
         {
   "particles": {
     "number": {
-      "value": 196,
+      "value": 182,
       "density": {
         "enable": true,
-        "value_area": 320
+        "value_area": 500
       }
     },
     "color": {
@@ -37,11 +39,11 @@
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 1,
-        "color": "#bbbbbb"
+        "width": 0,
+        "color": "#52f1ff"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 3
       },
       "image": {
         "src": "img/github.svg",
@@ -50,11 +52,11 @@
       }
     },
     "opacity": {
-      "value": 0.5371430403899496,
+      "value": 1,
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 30,
         "opacity_min": 0.1,
         "sync": false
       }
@@ -78,7 +80,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 0.65,
+      "speed": 1.65,
       "direction": "none",
       "random": true,
       "straight": false,
@@ -96,7 +98,7 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "bubble"
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
@@ -106,21 +108,21 @@
     },
     "modes": {
       "grab": {
-        "distance": 400,
+        "distance": 300,
         "line_linked": {
-          "opacity": 1
+          "opacity": 0.2
         }
       },
       "bubble": {
-        "distance": 85.26810729164131,
+        "distance": 115,
         "size": 3,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
+        "duration": 0.25,
+        "opacity": 1,
+        "speed": 1
       },
       "repulse": {
-        "distance": 200,
-        "duration": 0.4
+        "distance": 29,
+        "duration": 1
       },
       "push": {
         "particles_nb": 4

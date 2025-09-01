@@ -1,13 +1,15 @@
+html{
+  height: 100%;
+}
+
 body {
-    background: #e0e0e0;
+    background: rgb(46, 46, 46);
+    background: linear-gradient(0deg, rgb(46, 46, 46) 0%, rgb(24, 24, 24) 100%);
     width: 100vw;
-    height: 90vh;
+    height: 100%;
+    overflow: hidden;
   }
 
-  #logo {
-    margin: 0 auto;
-    text-align: center;
-    left: 50%;
-    top: 50%;
-    position: absolute;
-  }
+#particle-js{
+  z-index: -1;
+}
