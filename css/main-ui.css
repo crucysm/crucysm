@@ -1,21 +1,10 @@
 @charset "utf-8";
 
-.gowun-dodum-regular {
-  font-family: "Gowun Dodum", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+@font-face {
+  font-family: "regular-kor";
+  src: url("../font/elandL.woff");
 }
-.song-myung-regular {
-  font-family: "Song Myung", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-/* .raleway-<uniquifier> {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
+
 
 /* CSS Document */
 :root {
@@ -71,6 +60,8 @@ body{
   border: solid 1px blue;
   justify-content: center;
   align-items: center;
+  background: rgb(46, 46, 46);
+  background: linear-gradient(0deg, rgb(46, 46, 46) 0%, rgb(24, 24, 24) 100%);
 }
 
 .wrapper{
@@ -83,20 +74,10 @@ body{
   overflow-y: scroll;
 }
 
-/* .signature{
-  font-family: "Raleway", Verdana, sans-serif;
+.para{
+  color:#bbbbbb;
+  font-size: 1.35rem;
   font-optical-sizing: auto;
-  font-weight: 180;
-  font-style: normal;
-  font-size: 3rem;
-  color: #7E7E7E;
-  pointer-events: none;
-  letter-spacing: 1rem;
-  border: solid 1px red;
-} */
-
-.content{
-  font-family: "Gowun Dodum", sans-serif;
-  font-size: 1.65rem;
-  width: 50%;
+  font-family: "regular-kor", normal, sans-serif;
+  letter-spacing: 0.2rem;
 }
