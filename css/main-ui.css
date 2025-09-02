@@ -53,12 +53,7 @@ html {
 		  background: var(--accent-hover); 
 		}
 
-/* PARTICLE BACKGROUND */
-.particle-bg{
-  z-index: -1!important;
-  width: 100vw;
-  height: 100vh;
-}
+
 
 body{
   width: 100vw;
@@ -88,4 +83,14 @@ body{
   font-family: "regular-kor", normal, sans-serif;
   letter-spacing: 0.08rem;
   line-height: 150%;
+}
+
+/* PARTICLE BACKGROUND */
+.particle-bg{
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
