@@ -8,6 +8,7 @@
 .kr{
   font-family: "regular-kor";
   font-size: 1.2rem;
+  pointer-events: none;
 }
 
 /* CSS Document */
@@ -64,6 +65,7 @@ body{
   width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
+  display: flex;
 }
 .span{
   border: solid 1px blue;
@@ -98,4 +100,5 @@ body{
   position: absolute;
   bottom: 0;
   left: 0;
+  pointer-events: visible;
 }
