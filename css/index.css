@@ -5,6 +5,21 @@
   src: url("../font/elandL.woff");
 }
 
+@font-face {
+  font-family: "thin";
+  src: url("../font/Raleway-Thin.woff");
+}
+
+@font-face {
+  font-family: "light";
+  src: url("../font/Raleway-Light.woff");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../font/Raleway-Bold.woff");
+}
+
 .kr{
   font-family: "regular-kor";
   font-size: 1.2rem;
@@ -35,7 +50,9 @@ html {
   /* to get font size at 10px and still customizable */
     /* background: rgb(46, 46, 46); */
     /* background: linear-gradient(0deg, rgb(199,199,199) 0%, rgb(224, 224, 224) 100%); */
-    background-color: #ccc;
+  background-color: #ccc;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* CUSTOMIZED SCROLLBAR */
@@ -62,35 +79,29 @@ html {
 
 
 body{
-  width: 100vw;
+  width: 96vw;
   overflow-x: hidden;
   overflow-y: auto;
   display: flex;
 }
-.span{
+/* .span{
   border: solid 1px blue;
   height: 50vh;
-}
+} */
 
 .container{
   display: flex;
   border: solid 1px red;
   width: 85vw;
-  content: "text";
-  overflow-x: hidden;
-  overflow-y: scroll;
-  align-items: end;
-  justify-content: center;
 }
 
-.para{
+/* .para{
   color:#bbbbbb;
   font-size: 1.35rem;
-  font-optical-sizing: auto;
   font-family: "regular-kor", normal, sans-serif;
   letter-spacing: 0.08rem;
   line-height: 150%;
-}
+} */
 
 /* PARTICLE BACKGROUND */
 .particle-bg{
@@ -100,5 +111,11 @@ body{
   position: absolute;
   bottom: 0;
   left: 0;
-  pointer-events: visible;
+}
+
+h1{
+  font-family: "thin";
+  font-size: 1.8rem;
+  color: #f2f3f4;
+  letter-spacing: 2px;
 }
