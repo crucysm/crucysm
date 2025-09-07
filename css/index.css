@@ -28,9 +28,10 @@
 
 /* CSS Document */
 :root {
-  --accent-color: #2e84cb;
-  --accent-hover: #73f3ff;
-  --bg-color: #f2f2f2;
+  --c0: #1f2023;
+  --c1: #2e84cb;
+  --c2: #73f3ff;
+  --c3: #f2f2f2;
 }
 
 ::selection {
@@ -50,9 +51,10 @@ html {
   /* to get font size at 10px and still customizable */
     /* background: rgb(46, 46, 46); */
     /* background: linear-gradient(0deg, rgb(199,199,199) 0%, rgb(224, 224, 224) 100%); */
-  background-color: #ccc;
+  background-color: #c1c2c9;
   overflow-x: hidden;
   overflow-y: auto;
+  color: var(--c0);
 }
 
 /* CUSTOMIZED SCROLLBAR */
@@ -76,32 +78,14 @@ html {
 		  background: var(--accent-hover); 
 		}
 
-
-
 body{
   width: 96vw;
   overflow-x: hidden;
   overflow-y: auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* .span{
-  border: solid 1px blue;
-  height: 50vh;
-} */
-
-.container{
-  display: flex;
-  border: solid 1px red;
-  width: 85vw;
-}
-
-/* .para{
-  color:#bbbbbb;
-  font-size: 1.35rem;
-  font-family: "regular-kor", normal, sans-serif;
-  letter-spacing: 0.08rem;
-  line-height: 150%;
-} */
 
 /* PARTICLE BACKGROUND */
 .particle-bg{
@@ -116,6 +100,15 @@ body{
 h1{
   font-family: "thin";
   font-size: 1.8rem;
-  color: #f2f3f4;
-  letter-spacing: 2px;
+  letter-spacing: 6px;
+}
+
+h2{
+  font-family: "bold";
+  font-size: 8rem;
+}
+
+h3{
+  font-family: "thin";
+  font-size: 3rem;
 }
