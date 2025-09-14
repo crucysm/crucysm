@@ -29,9 +29,10 @@
 /* CSS Document */
 :root {
   --c0: #1f2023;
-  --c1: #bbdfdd;
-  --c2: #204a43;
+  --c1: #95bab2;
+  --c2: #2b9886;
   --c3: #f2f2f2;
+  --c4: #d1d6e5;
 }
 
 ::selection {
@@ -48,9 +49,6 @@
 
 html {
   font-size: 62.5%;
-  /* to get font size at 10px and still customizable */
-    /* background: rgb(46, 46, 46); */
-    /* background: linear-gradient(0deg, rgb(199,199,199) 0%, rgb(224, 224, 224) 100%); */
   background-color: #c1c2c9;
   overflow-x: hidden;
   overflow-y: auto;
@@ -69,13 +67,13 @@ html {
 		}
 		/* Handle */
 		::-webkit-scrollbar-thumb {
-		  background: var(--accent-color);
+		  background: var(--c1);
 		  box-shadow: none;
 		  border-radius: 5px;
 		}
 		/* Handle on hover */
 		::-webkit-scrollbar-thumb:hover {
-		  background: var(--accent-hover); 
+		  background: var(--c2); 
 		}
 
 body{
@@ -85,6 +83,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid yellow;
+  margin: 0 auto;
 }
 
 /* PARTICLE BACKGROUND */
@@ -97,7 +97,10 @@ body{
   left: 0;
 }
 
-/* HERO CONTENT */
+.wrapper{
+  pointer-events: none;
+}
+
 .hero-content{
   border: solid 1px blue;
 }
@@ -123,8 +126,18 @@ h3{
   position: absolute;
   top: 0;
   left: 0;
+  height: 200px;
+  width: 100%;
+  border: solid 1px black;
 }
 
-.container{
-  display: flex;
+.key-visual{
+  width: 100%;
+  height: 100%;
+  border: solid 1px red;
+  height: 100%;
+}
+
+.logo::after{
+  content: "CRUCYSM";
 }
