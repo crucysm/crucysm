@@ -76,7 +76,7 @@ particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trê
         "mode": "grab"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "bubble"
       },
       "resize": true
