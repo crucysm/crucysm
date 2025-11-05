@@ -2,7 +2,7 @@ particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trê
         {
   "particles": {
     "number": {
-      "value": 28,
+      "value": 44,
       "density": {
         "enable": true,
         "value_area": 500
@@ -18,7 +18,7 @@ particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trê
         "color": "#52f1ff"
       },
       "polygon": {
-        "nb_sides": 3
+        "nb_sides": 6
       },
       "image": {
         "src": "img/github.svg",
@@ -50,7 +50,7 @@ particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trê
       "enable": true,
       "distance": 240,
       "color": "#555857",
-      "opacity": 0.42,
+      "opacity": 0.18,
       "width": 1
     },
     "move": {
@@ -85,7 +85,7 @@ particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trê
       "grab": {
         "distance": 280,
         "line_linked": {
-          "opacity": 0.8
+          "opacity": 0.18
         }
       },
       "bubble": {
