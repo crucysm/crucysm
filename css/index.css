@@ -25,6 +25,11 @@
   src: url("../font/Raleway-Bold.woff");
 }
 
+@font-face {
+  font-family: "script";
+  src: url("../font/Bahianita-Regular.ttf");
+}
+
 .kr{
   font-family: "regular-kor";
   font-size: 1.2rem;
@@ -100,9 +105,9 @@ body{
   position: absolute;
   bottom: 0;
   left: 0;
-  background: linear-gradient(#aaa, #ccc);
   filter: blur(1px);
-  z-index: -1;
+  background: linear-gradient(#aaa, #ccc);
+
 }
 
 /* .wrapper{
@@ -157,12 +162,19 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: inherit;
 }
 
 .herocontent p{
-  font-family: 'light', sans-serif;
+  font-family: "script";
   font-size: 10rem;
   letter-spacing: 0px;
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
 .herocontent p:hover{
