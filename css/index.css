@@ -94,6 +94,7 @@ body{
   justify-content: center;
   border: 1px solid yellow;
   margin: 0 auto;
+  background: linear-gradient(red, blue);
   font-family: 'regular', sans-serif;
 }
 
@@ -107,7 +108,6 @@ body{
   left: 0;
   filter: blur(1px);
   background: linear-gradient(#aaa, #ccc);
-
 }
 
 /* .wrapper{
