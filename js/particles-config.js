@@ -73,7 +73,7 @@ particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trê
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "grab bubble"
       },
       "onclick": {
         "enable": true,
