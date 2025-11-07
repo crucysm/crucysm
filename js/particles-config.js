@@ -2,7 +2,7 @@ particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trê
         {
   "particles": {
     "number": {
-      "value": 44,
+      "value": 65,
       "density": {
         "enable": true,
         "value_area": 500
@@ -73,7 +73,7 @@ particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trê
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab bubble"
+        "mode": "grab bubble push"
       },
       "onclick": {
         "enable": true,
@@ -89,8 +89,8 @@ particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trê
         }
       },
       "bubble": {
-        "distance": 115,
-        "size": 3,
+        "distance": 300,
+        "size": 3.5,
         "duration": 0.25,
         "opacity": 1,
         "speed": 1

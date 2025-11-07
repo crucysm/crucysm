@@ -43,9 +43,9 @@
 /* CSS Document */
 :root {
   --c0: #272221;
-  --c1: #c5ccad;
+  --c1: #616161;
   --c2: #00d7c9;
-  --c3: #f2f2f2;
+  --c3: #bdbdbd;
   --c4: #d1d6e5;
 }
 
@@ -64,8 +64,6 @@
 html {
   font-size: 62.5%;
   background-color: #c1c2c9;
-  overflow-x: hidden;
-  overflow-y: auto;
   color: var(--c0);
 }
 
@@ -104,17 +102,58 @@ body{
 
 /* PARTICLE BACKGROUND */
 .particle-bg{
-  /* z-index: -1; */
   width: 100vw;
   height: 100vh;
   position: absolute;
   bottom: 0;
   left: 0;
   filter: blur(1px);
-  background: linear-gradient(#727272, #dfdfdf);
+  background: linear-gradient(#ddd, #bbb);
   position: fixed;
-  z-index: -1;
+  z-index: 0;
 }
+
+/* NAVIGATION */
+
+.navigation{
+  width: 15rem;
+  height: 3rem;
+  z-index: 3;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  /* border: solid 1px red; */
+  display: flex;
+  gap: .4rem;
+}
+
+.navigation a{
+  flex: 1;
+  text-decoration: none;
+  text-align: center;
+  line-height: 3rem;
+  font-family: "regular";
+  font-size: 1.2rem;
+  color: #999;
+  border-radius: 1rem 0 1rem 0;
+  background-color: rgba(0,0,0,0);
+  /* border: solid 1px blue; */
+  transition: 0.15s ease;
+}
+
+.navigation a:hover{
+  background-color: rgba(0,0,0,0.2);
+  color: var(--c0);
+}
+
+.navigation a:active{
+  background-color: #666;
+  color: white;
+}
+
+/* --------------------------------------------- */
+/* SECTION */
+/* --------------------------------------------- */
 
 section{
   width: 100vw;
@@ -129,7 +168,8 @@ section{
 
 .herocontent a{
   font-family: "script";
-  font-size: 18rem;
+  font-size: 14rem;
+  line-height: 85%;
   color: var(--c0);
   position: absolute;
   top: 50%;
@@ -138,17 +178,10 @@ section{
   z-index: 2;
   text-align: center;
   text-decoration: none;
-  /* animation: asthma 3.33s ease-in-out infinite; */
+  animation: asthma 3.33s ease-in-out infinite;
 }
 
-@keyframes asthma {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-3px);
-    }
-}
+@keyframes asthma { 0%, 100% {transform: translate(-50%,-50%);} 50% {transform: translate(-50%,-49%);}}
 
 .herocontent a:hover{
   filter:blur(6px);
@@ -163,7 +196,7 @@ section{
 
 .herocontent p{
   font-family: "scriptCN", serif;
-  font-size: 48rem;
+  font-size: 38rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -171,7 +204,13 @@ section{
   color: white;
   opacity: 0.45;
   filter: blur(3px);
+  text-shadow: 0 0 30px rgba(255,255,255,.5);
+  z-index: 1;
+  animation: asthma-r 3.33s ease-in-out infinite;
+  animation-delay: 1s;
 }
+
+@keyframes asthma-r { 0%, 100% {transform: translate(-50%,-50%);} 50% {transform: translate(-50%,-49%);}}
 
 .herocontent a:hover + p{
   filter:blur(0);
@@ -189,32 +228,35 @@ section{
 .herocontent p::after{
   content: "";
   display: block;
-  width: 32rem;
-  height: 32rem;
+  width: 26rem;
+  height: 26rem;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: solid #999 5rem;
+  border: solid #000 5rem;
+  opacity: 0.35;
   box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(255,255,255,.5),
+              0 0 10px rgba(255,255,255,.5) inset;
   z-index: -1;
 }
 
 .herocontent a:hover + p::after{
-  transition: cubic-bezier(0.38, -0.35, 0.32, 1.05) .85s;
+  transition: cubic-bezier(0.38, -0.35, 0.32, 1.05) .5s;
   width: 110%;
   height: 110%;
   border: solid .6rem white;
+  opacity: 1;
 }
 
 .herocontent a:not(:hover) + p::after{
-  transition: cubic-bezier(0.38, -0.35, 0.32, 1.05) .85s;
+  transition: cubic-bezier(0.38, -0.35, 0.32, 1.05) .5s;
   width: 32rem;
   height: 32rem;
   border: solid #999 5rem;
   box-sizing: border-box;
-  z-index: -1;
 }
 
 
@@ -224,4 +266,6 @@ section{
 
 .index{
   height: 200vh;
+  z-index: 1;
+  background-color: rgba(245,245,245,.5);
 }
