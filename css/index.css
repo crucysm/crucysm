@@ -26,6 +26,11 @@
 }
 
 @font-face {
+  font-family: "thini";
+  src: url("../font/Raleway-ThinItalic.woff");
+}
+
+@font-face {
   font-family: "script";
   src: url("../font/Alviona.woff");
 }
@@ -47,7 +52,8 @@
   --c2: #616161;
   --c3: #db541a;
   --c4: #bdbdbd;
-  --c5: #d1d6e5;
+  --c5: #f8f9fb;
+  --c6: #b6c1d3;
 }
 
 ::selection {
@@ -109,7 +115,7 @@ body{
   left: 0;
   filter: blur(1px);
   /* background: linear-gradient(#ddd, #bbb); */
-  background: linear-gradient(#f8f9fb, #b6c1d3);
+  background: linear-gradient(var(--c5), var(--c6));
   position: fixed;
   z-index: 0;
 }
@@ -157,7 +163,7 @@ body{
 section{
   width: 100vw;
   pointer-events: inherit;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .herocontent{
@@ -168,7 +174,7 @@ section{
 .herocontent a{
   font-family: "script";
   font-size: 14rem;
-  line-height: 85%;
+  line-height: 300%;
   color: var(--c0);
   position: absolute;
   top: 50%;
@@ -258,6 +264,26 @@ section{
   box-sizing: border-box;
 }
 
+.herocontent button{
+  width: 20rem;
+  height: 3.3rem;
+  background-image: url('../ui/down-03.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: 2;
+  position: fixed;
+  border: none;
+  left: 5vw;
+  bottom: 5vw;
+  background-color: transparent;
+  cursor: pointer;;
+  transition: 1s;
+}
+
+.herocontent button:hover{
+  background-image: url('../ui/down-04.svg');
+}
+
 .uidown{
   /* width: 100%; */
   height: 3rem;
@@ -270,7 +296,7 @@ section{
 
 #prototype{
   font-size: 1rem;
-  font-family: 'thin';
+  font-family: 'thin', sans-serif;
   letter-spacing: .2rem;
   color: var(--c2);
   position: fixed;
@@ -278,6 +304,7 @@ section{
   right: 5vw;
   bottom: 5rem;
   line-height: 1.5rem;
+  /* text-shadow: .8rem .5rem 0 rgba(0,0,0,0.1); */
 }
 
 
@@ -286,7 +313,83 @@ section{
 /* --------------------------------------------- */
 
 .index{
-  height: 100vh;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  z-index: 1;
+  padding: 5vw 10vw 5vw 5vw;
+  position: relative;
+}
+
+h3{ /* NAVIGATION */
+  font-size: 4rem;
+  color: var(--c1);
+  letter-spacing: .2rem;
+  text-shadow: 1rem .5rem 0 rgba(0,0,0,0.05);
+}
+
+.table{
+  top: 3rem;
+  column-width: 25rem;
+  gap: 5rem;
+  row-gap: 2rem;
+  left: 5vw;
+  position: relative;
+  list-style-type: none;
+}
+
+
+.table li a{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-decoration: none;
+  color: var(--c4);
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 0 1rem 1rem;
+  transition: .25s;
+  position: relative;
+}
+
+.table li a::before{
+  content: "";
+  width: .3rem;
+  height: 100%;
+  background-color: var(--c0);
+  position: absolute;
+  left: -.8rem;
+  top: 50%;
+  transform: translate(0,-50%);
+  z-index: 1;
+  opacity: 0;
+}
+
+.table li a:hover{
+  background-color: white;
+  color: var(--c3)!important;
+  transition: .1s;
+}
+
+.table li a:hover::before{
+  opacity: 1;
+  background-color: white;
+  transition: .25s;
+}
+
+.table li a:visited{
+  color: inherit;
+}
+
+/* --------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------- */
+
+.footer{
+  border: solid 1px var(--c0);
+  width: 70vw;
+  height: 3rem;
+  line-height: 2.5rem;
+  background: var(--c0);
+  z-index: 1;
+  text-align: center;
+  color: var(--c5);
+  letter-spacing: .2rem;
+  font-family: 'thini';
 }
