@@ -42,15 +42,16 @@
 
 /* CSS Document */
 :root {
-  --c0: #272221;
-  --c1: #616161;
-  --c2: #00d7c9;
-  --c3: #bdbdbd;
-  --c4: #d1d6e5;
+  --c0: #1a191e;
+  --c1: #3d4248;
+  --c2: #616161;
+  --c3: #db541a;
+  --c4: #bdbdbd;
+  --c5: #d1d6e5;
 }
 
 ::selection {
-  background-color: var(--c0);
+  background-color: var(--c5);
   color: var(--c1);
 }
 
@@ -70,23 +71,22 @@ html {
 /* CUSTOMIZED SCROLLBAR */
 		/* width */
 		::-webkit-scrollbar {
-		  width: 5px;
+		  width: .6rem;
 		}
 		/* Track */
 		::-webkit-scrollbar-track {
-		  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
-		  border-radius: 5px;
+		  box-shadow: inset .3rem 0 0 var(--c5);
 		}
 		/* Handle */
 		::-webkit-scrollbar-thumb {
-		  background: #bdbdbd;
-		  box-shadow: none;
-		  border-radius: 5px;
+		  background: var(--c0);
+      box-shadow: inset .3rem 0 0 var(--c5);
+      transition: 0.35s ease;
 		}
 		/* Handle on hover */
 		::-webkit-scrollbar-thumb:hover {
-		  background: var(--c2);
-      transition: 0.35s ease;
+      background: var(--c1);
+      box-shadow: none;
 		}
 
 body{
@@ -108,7 +108,8 @@ body{
   bottom: 0;
   left: 0;
   filter: blur(1px);
-  background: linear-gradient(#ddd, #bbb);
+  /* background: linear-gradient(#ddd, #bbb); */
+  background: linear-gradient(#f8f9fb, #b6c1d3);
   position: fixed;
   z-index: 0;
 }
@@ -116,12 +117,12 @@ body{
 /* NAVIGATION */
 
 .navigation{
-  width: 15rem;
-  height: 3rem;
+  width: 12rem;
+  height: 2rem;
   z-index: 3;
   position: fixed;
   top: 5rem;
-  right: 5rem;
+  right: 5vw;
   /* border: solid 1px red; */
   display: flex;
   gap: .4rem;
@@ -131,24 +132,22 @@ body{
   flex: 1;
   text-decoration: none;
   text-align: center;
-  line-height: 3rem;
+  line-height: 2rem;
   font-family: "regular";
   font-size: 1.2rem;
   color: #999;
-  border-radius: 1rem 0 1rem 0;
   background-color: rgba(0,0,0,0);
   /* border: solid 1px blue; */
   transition: 0.15s ease;
 }
 
 .navigation a:hover{
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.1);
   color: var(--c0);
 }
 
-.navigation a:active{
-  background-color: #666;
-  color: white;
+.navactive{
+  color: var(--c0)!important;
 }
 
 /* --------------------------------------------- */
@@ -181,10 +180,10 @@ section{
   animation: asthma 3.33s ease-in-out infinite;
 }
 
-@keyframes asthma { 0%, 100% {transform: translate(-50%,-50%);} 50% {transform: translate(-50%,-49%);}}
+@keyframes asthma { 0%, 100% {transform: translate(-50%,-50%);} 50% {transform: translate(-50%,-48.5%);}}
 
 .herocontent a:hover{
-  filter:blur(6px);
+  filter:blur(5px);
   opacity: 0.25;
   transition: cubic-bezier(0.48, 0, 0.32, 1.05) .85s;
 }
@@ -194,7 +193,7 @@ section{
   transition: cubic-bezier(0.38, -0.35, 0.32, 1.05) .85s;
 }
 
-.herocontent p{
+.herocontent h1{
   font-family: "scriptCN", serif;
   font-size: 38rem;
   position: absolute;
@@ -210,22 +209,22 @@ section{
   animation-delay: 1s;
 }
 
-@keyframes asthma-r { 0%, 100% {transform: translate(-50%,-50%);} 50% {transform: translate(-50%,-49%);}}
+@keyframes asthma-r { 0%, 100% {transform: translate(-50%,-50%);} 50% {transform: translate(-50%,-48.5%);}}
 
-.herocontent a:hover + p{
+.herocontent a:hover + h1{
   filter:blur(0);
   transition: cubic-bezier(0.38, -0.35, 0.32, 1.05) .85s;
   transition-delay: 0.25s;
   opacity: 1;
 }
 
-.herocontent a:not(:hover) + p{
+.herocontent a:not(:hover) + h1{
   filter:blur(3px);
   transition: cubic-bezier(0.38, -0.35, 0.32, 1.05) .85s;
   opacity: 0.45;
 }
 
-.herocontent p::after{
+.herocontent h1::after{
   content: "";
   display: block;
   width: 26rem;
@@ -243,7 +242,7 @@ section{
   z-index: -1;
 }
 
-.herocontent a:hover + p::after{
+.herocontent a:hover + h1::after{
   transition: cubic-bezier(0.38, -0.35, 0.32, 1.05) .5s;
   width: 110%;
   height: 110%;
@@ -251,7 +250,7 @@ section{
   opacity: 1;
 }
 
-.herocontent a:not(:hover) + p::after{
+.herocontent a:not(:hover) + h1::after{
   transition: cubic-bezier(0.38, -0.35, 0.32, 1.05) .5s;
   width: 32rem;
   height: 32rem;
@@ -259,13 +258,35 @@ section{
   box-sizing: border-box;
 }
 
+.uidown{
+  /* width: 100%; */
+  height: 3rem;
+  position: fixed;
+  bottom: 3rem;
+  left: 5vw;
+  transform: translate(-50%,-50%);
+  z-index: 3;
+}
+
+#prototype{
+  font-size: 1rem;
+  font-family: 'thin';
+  letter-spacing: .2rem;
+  color: var(--c2);
+  position: fixed;
+  z-index: 1;
+  right: 5vw;
+  bottom: 5rem;
+  line-height: 1.5rem;
+}
+
 
 /* --------------------------------------------- */
-/* HOME CONTENT */
+/* CONTENT TABLE */
 /* --------------------------------------------- */
 
 .index{
-  height: 200vh;
-  z-index: 1;
-  background-color: rgba(245,245,245,.5);
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
