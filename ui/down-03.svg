@@ -1,20 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.72 16.41">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16.72 16.41">
   <defs>
     <style>
       .cls-1 {
-        fill: #1a191e;
+        fill: #402d7c;
       }
 
-      .cls-1, .cls-2 {
+      .cls-1, .cls-2, .cls-3, .cls-4 {
         stroke-width: 0px;
       }
 
       .cls-2 {
-        fill: #db541a;
+        fill: #ab97ff;
+      }
+
+      .cls-2, .cls-4 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-5 {
+        isolation: isolate;
+      }
+
+      .cls-6 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-7 {
+        mask: url(#mask-1);
+      }
+
+      .cls-8 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        fill: #f8c2ff;
+      }
+
+      .cls-9 {
+        filter: url(#luminosity-noclip-2);
+      }
+
+      .cls-4 {
+        fill: #fff;
       }
     </style>
+    <filter id="luminosity-noclip" x="-2.64" y=".73" width="22" height="18" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x="-2.64" y=".73" width="22" height="18" maskUnits="userSpaceOnUse">
+      <g class="cls-6">
+        <image width="22" height="18" transform="translate(-2.64 .73)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAACXBIWXMAAAsSAAALEgHS3X78AAACqklEQVQ4jWJkYGD4z0BtwMDAAAAAAP//YqKFoQwMDAwAAAAA//8i22Bubm7ckgwMDAAAAAD//2IhxhA1NTUGYWFhBnZ2dgYmJoRbPnz4wPD69WuGx48fo2pgYGAAAAAA//9szCEOADEIAMFtUoFpwCCa/v9ddUgsiqTyzM0D5jc+5+DuqCprLfbemBkiwhiD7qaqyEwigjkn994vAB4AAAD//2SOoREAQAjDamAANJ7910IiEfBH7YteXZIP7O6ICP7Br9TMKFBV7C66G1XFWhHBzHCZSSEAPAAAAP//wjBYXFwcbKiioiLYpSIiImDXgsKUmZkZbMC3b98YuLi4wJZ8+fIFbAEPDw/D27dvIYYwMDAAAAAA//9UkKENAEAMArEsUMf+AyJb8QH3TbDH0Q8sqeBYJoHOTMEkC97dWsY6C/Lzu4PtlvQAPAAAAP//ghsMshEUpqAIAoUZCIM0gjBIDBS+IENArgTRIJeDDP/69SvYpY8ePUK4kIGBAQAAAP//ghsMUghSBLIZZjvIyz9//gQbALIIFHEgPkgcpAYUeS9fvgRjFMDAwAAAAAD//1SRMQoAMBDC/P8PXQR3H1HSodDhNi9EfGDCLMsztbHkqI8lQEwZZ9uFtZVtJfm5kg4AAAD//8KIPJAikOEgF4EMAWGQT0DBBLLkx48f4MgCOeL27dsMFy9exDCUgYGBAQAAAP//wpqO7969C8agDACyABSGoIgE+QBkMMi1IPknT55gNZSBgYEBAAAA//8iWAipqKiAkx8o6YGSHCgFvHjxAuxiUDBgBQwMDAAAAAD//yK6dFNSUgInPVAkw4ICJ2BgYAAAAAD//yKp2ASlZ1D4v3//Hr9CBgYGAAAAAP//ok15zMDAAAAAAP//ok15zMDAAAAAAP//AwBky/1jQ7ZGswAAAABJRU5ErkJggg=="/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-2" x="1.36" y="-2.27" width="12" height="9" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="1.36" y="-2.27" width="12" height="9" maskUnits="userSpaceOnUse">
+      <g class="cls-9">
+        <image width="12" height="9" transform="translate(1.36 -2.27)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAYAAAAGuM1UAAAACXBIWXMAAAsSAAALEgHS3X78AAAA00lEQVQYlWJkYGD4z0AsYGBgAAAAAP//YiJFMQMDAwMAAAD//8KqgY2NjYGdnR1TgoGBAQAAAP//YkEX4OTkZODl5WVgYmJi+P79O8PPnz8Zfvz4AZFkYGAAAAAA//9C0cDBwQFWDLKBkZERjEEa//79y/D7928GBgYGBgAAAAD//4JrYGFhASsESX779o3h////DP/+/QMrBLHBgIGBAQAAAP//gocSSAMIgyRBzsAKGBgYAAAAAP//Ii1YGRgYAAAAAP//Ii1YGRgYAAAAAP//AwDQvCpbd+M7pwAAAABJRU5ErkJggg=="/>
+      </g>
+    </mask>
   </defs>
-  <polygon class="cls-2" points="16.72 6.76 9.83 16.41 0 9.66 2.84 5.68 12.28 3.7 16.72 6.76"/>
-  <polygon class="cls-1" points="10.87 2.73 3.9 4.19 6.89 0 10.87 2.73"/>
+  <g class="cls-5">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <g>
+          <polygon class="cls-3" points="16.72 6.76 9.83 16.41 0 9.66 2.84 5.68 12.28 3.7 16.72 6.76"/>
+          <g class="cls-8">
+            <polygon class="cls-4" points="16.72 6.76 9.83 16.41 0 9.66 2.84 5.68 12.28 3.7 16.72 6.76"/>
+          </g>
+        </g>
+        <g>
+          <polygon class="cls-1" points="10.87 2.73 3.9 4.19 6.89 0 10.87 2.73"/>
+          <g class="cls-7">
+            <polygon class="cls-2" points="10.87 2.73 3.9 4.19 6.89 0 10.87 2.73"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>
