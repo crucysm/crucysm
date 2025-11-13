@@ -133,6 +133,7 @@ section{
   text-align: left;
   color: var(--c1);
   font-family: 'italic', sans-serif;
+  line-height: 3.3rem;
 }
 
 .herocontent button:hover{
