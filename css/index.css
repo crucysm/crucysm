@@ -247,6 +247,6 @@ h3{ /* NAVIGATION */
   z-index: 1;
   text-align: center;
   color: var(--c5);
-  letter-spacing: .2rem;
-  font-family: 'thini';
+  letter-spacing: .1rem;
+  font-family: 'italic';
 }

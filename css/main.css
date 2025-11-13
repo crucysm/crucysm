@@ -55,7 +55,8 @@
   --c0: #1a191e;
   --c1: #3d4248;
   --c2: #616161;
-  --c3: #db541a;
+  /* --c3: #db541a; */
+  --c3: #a29c6c;
   --c4: #bdbdbd;
   --c5: #f8f9fb;
   --c6: #b6c1d3;
@@ -63,7 +64,7 @@
 
 ::selection {
   background-color: var(--c5);
-  color: var(--c1);
+  color: var(--c3);
 }
 
 *{
