@@ -10,7 +10,7 @@
     <!-- css -->
     <link href="./css/main.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="./css/index.css" media="screen" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="./favicon/fav.ico">
+    <link rel="icon" type="image/x-icon" href="./favicon/fav-02.ico">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
   <section class="herocontent">
     <a href="#contenttable">CRUCYSM</a>
     <h1 lang="en">
-      <span lang="zh-Hans" xml:lang="zh-Hans">键</span>
+      <span lang="en" xml:lang="en">键</span>
       <!-- <span lang="en-US" xml:lang="en-US">KEY</span> -->
     </h1> <!--键 là KEY, KIỆN (cái chốt), 건-->
     <button onclick="location.href='#contenttable'">KIỆN /jiàn/: cái chốt gài</button>
@@ -57,17 +57,38 @@
   </section>
 
   <section class="footer">
-    <p>Den som väntar på något gott väntar aldrig för länge. The man who waits for something good, waits never too long.</p>
+    <p>Den som väntar på något gott väntar aldrig för länge.</p>
+    <!-- The man who waits for something good, waits never too long. -->
   </section>
 
   <div class="particle-bg" id="particles-js"></div>
 
-  <!-- APP JS -->
   <script src="./js/app.js"></script>
   <!-- PARTICLE JS -->
   <script src="./js/particles.js"></script>
   <script src="./js/particles-config.js"></script>
-
+  <!-- SWITCH LANGUAGES -->
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script>
+  $('[lang]').hide(); // hide all lang attributes on start.
+  $('[lang="en"]').show(); // show just Korean text (you can change it)
+  $('#lang-switch').change(function () { // put onchange event when user select option from select
+      var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+      switch (lang) {
+          case 'en':
+              $('[lang]').hide();
+              $('[lang="en"]').show();
+          break;
+          case 'ko':
+              $('[lang]').hide();
+              $('[lang="ko"]').show();
+          break;
+          default:
+              $('[lang]').hide();
+              $('[lang="ko"]').show();
+          }
+  });
+  </script>
 </body>
 </html>
 

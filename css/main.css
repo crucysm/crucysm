@@ -63,8 +63,8 @@
 }
 
 ::selection {
-  background-color: var(--c5);
-  color: var(--c3);
+  background-color: var(--c3);
+  color: var(--c5);
 }
 
 *{

@@ -5,7 +5,7 @@
 /* --------------------------------------------- */
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   html {
     font-size: 45%;
   }
@@ -176,7 +176,7 @@ section{
 
 .index{
   z-index: 1;
-  padding: 5vw 10vw 5vw 5vw;
+  padding: 5vw 10vw 10rem 5vw;
   position: relative;
 }
 
@@ -247,12 +247,12 @@ h3{ /* NAVIGATION */
 .footer{
   border: solid 1px var(--c0);
   width: 70vw;
-  height: 3rem;
+  padding-bottom: 1rem;
   line-height: 2.5rem;
   background: var(--c0);
   z-index: 1;
   text-align: center;
-  color: var(--c5);
+  color: var(--c3);
   letter-spacing: .1rem;
   font-family: 'italic';
 }
