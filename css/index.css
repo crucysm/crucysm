@@ -203,7 +203,7 @@ h3{ /* NAVIGATION */
   font-size: 1.5rem;
   line-height: 2rem;
   text-decoration: none;
-  color: var(--c4);
+  /* color: var(--c4); */
   display: inline-block;
   width: 100%;
   padding: 1rem 0 1rem 1rem;
@@ -225,19 +225,19 @@ h3{ /* NAVIGATION */
 }
 
 .table li a:hover{
-  background-color: white;
-  color: var(--c3)!important;
+  background-color: var(--c3);
+  color: white!important;
   transition: .1s;
 }
 
 .table li a:hover::before{
   opacity: 1;
-  background-color: white;
-  transition: .25s;
+  background-color: var(--c3);
+  transition: .2s;
 }
 
 .table li a:visited{
-  color: inherit;
+  color: transparent;
 }
 
 /* --------------------------------------------- */

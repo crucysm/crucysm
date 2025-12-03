@@ -55,7 +55,7 @@ particlesJS("particles-js", /*dán nội tập tin JSON đã tải về ở trê
     },
     "move": {
       "enable": true,
-      "speed": 1.65,
+      "speed": .65,
       "direction": "none",
       "random": true,
       "straight": false,
