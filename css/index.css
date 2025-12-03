@@ -247,12 +247,13 @@ h3{ /* NAVIGATION */
 .footer{
   border: solid 1px var(--c0);
   width: 70vw;
-  padding-bottom: 1rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
   background: var(--c0);
   z-index: 1;
   text-align: center;
   color: var(--c3);
   letter-spacing: .1rem;
   font-family: 'italic';
+  position: fixed;
+  bottom: 0;
 }
