@@ -1,0 +1,11 @@
+Model Information:
+* title:	CSGO-Styled Butterfly Knife
+* source:	https://sketchfab.com/3d-models/csgo-styled-butterfly-knife-6f023e5fb12947e18ce2d93d38e13cfd
+* author:	Aslady (https://sketchfab.com/Aslady)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "CSGO-Styled Butterfly Knife" (https://sketchfab.com/3d-models/csgo-styled-butterfly-knife-6f023e5fb12947e18ce2d93d38e13cfd) by Aslady (https://sketchfab.com/Aslady) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
