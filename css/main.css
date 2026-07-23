@@ -76,7 +76,7 @@
 
 html {
   font-size: 62.5%;
-  background-color: #c1c2c9;
+  /* background-color: #c1c2c9; */
   color: var(--c0);
   overflow-x: hidden;
 }
@@ -111,46 +111,40 @@ body{
   margin: 0 auto;
   font-family: 'regular', sans-serif;
   flex-direction: column;
+  background-color: #c1c2c9;
 }
 
-/* PARTICLE BACKGROUND */
-.particle-bg{
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  filter: blur(1px);
-  /* background: linear-gradient(#ddd, #bbb); */
-  background: linear-gradient(var(--c5), var(--c6));
-  position: fixed;
-  z-index: 0;
-}
 
 /* NAVIGATION */
 
 .navigation{
   width: 32rem;
-  height: 5rem;
+  height: 8rem;
   z-index: 3;
-  position: fixed;
+  position: absolute;
   top: 5rem;
-  right: 5vw;
-  /* border: solid 1px red; */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: .4rem;
+  background-color: rgba(255,255,255,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  border: solid 2px var(--c3);
 }
 
 .navigation a{
   flex: 1;
   text-decoration: none;
   text-align: center;
-  line-height: 5rem;
+  line-height: 8rem;
   font-family: "regular";
   font-size: 1.2rem;
   color: #999;
   background-color: rgba(0,0,0,0);
-  /* border: solid 1px blue; */
   transition: 0.15s ease;
 }
 
@@ -161,4 +155,54 @@ body{
 
 .navactive{
   color: var(--c0)!important;
+}
+
+
+/* FOOTER */
+
+.footer{
+  border: solid 1px var(--c0);
+  width: 100vw;
+  line-height: 2rem;
+  background: var(--c0);
+  z-index: 1;
+  text-align: center;
+  color: var(--c3);
+  letter-spacing: .1rem;
+  font-family: 'italic';
+  bottom: 0;
+}
+
+.footer a, .footer a:visited{
+  font-family: 'regular';
+  text-decoration: none;
+  color: var(--c3);
+}
+
+.footer a:hover{
+  color: white;
+}
+
+.wrapper{
+  width: 80%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px var(--c2);
+}
+
+.cols{
+  /* border: solid 1px blue; */
+  flex: 1;
+}
+
+.cols ul{
+  list-style: none;
+  text-align: left;
+}
+
+.footer p{
+  padding: 3rem;
 }
