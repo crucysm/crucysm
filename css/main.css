@@ -37,11 +37,11 @@
 
 @font-face {
   font-family: "script";
-  src: url("../font/Alviona.woff");
+  src: url("../font/Fz-MyEverything.woff");
 }
 
 @font-face {
-  font-family: "scriptCN";
+  font-family: "script-chn";
   src: url("../font/GSKA00B.woff");
 }
 
@@ -53,13 +53,13 @@
 /* CSS Document */
 :root {
   --c0: #1a191e;
-  --c1: #3d4248;
-  --c2: #616161;
+  --c1: #b68039;
+  --c2: #9f9f9f;
   /* --c3: #db541a; */
-  --c3: #c0ad7e;
+  --c3: #bbb4a0;
   --c4: #bdbdbd;
   --c5: #f8f9fb;
-  --c6: #b6c1d3;
+  --c6: #b29a8d;
 }
 
 ::selection {
@@ -88,17 +88,17 @@ html {
 		}
 		/* Track */
 		::-webkit-scrollbar-track {
-		  box-shadow: inset .3rem 0 0 var(--c5);
+		  box-shadow: inset .3rem 0 0 rgba(0,0,0,0.05);
 		}
 		/* Handle */
 		::-webkit-scrollbar-thumb {
-		  background: var(--c0);
-      box-shadow: inset .3rem 0 0 var(--c5);
+		  background: rgba(180, 132, 49, 0.05);
+      box-shadow: inset 2px 0 0 var(--c3);
       transition: 0.35s ease;
 		}
 		/* Handle on hover */
 		::-webkit-scrollbar-thumb:hover {
-      background: var(--c1);
+      background: var(--c3);
       box-shadow: none;
 		}
 
@@ -111,7 +111,7 @@ body{
   margin: 0 auto;
   font-family: 'regular', sans-serif;
   flex-direction: column;
-  background-color: #c1c2c9;
+  /* background-color: var(--c3); */
 }
 
 
@@ -158,7 +158,7 @@ body{
 }
 
 
-/* FOOTER */
+/* FOOTER
 
 .footer{
   border: solid 1px var(--c0);
@@ -194,7 +194,7 @@ body{
 }
 
 .cols{
-  /* border: solid 1px blue; */
+  border: solid 1px blue;
   flex: 1;
 }
 
@@ -206,3 +206,5 @@ body{
 .footer p{
   padding: 3rem;
 }
+
+*/
