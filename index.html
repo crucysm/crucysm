@@ -1,61 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prototype--261110</title>
-    <meta name="author" content="lqhuij">
-    <meta name="description" content="Design Ethinicity">
-    <!-- css -->
-    <link href="./css/main.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="./css/index.css" media="screen" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
-</head>
+<!doctype html>
+<html lang="vi">
+	<head>
+		<!-- meta -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>prototype--261110</title>
+		<meta name="author" content="lqhuij" />
+		<meta name="description" content="design ethinicity" />
+		<!-- css -->
+		<link href="./css/main.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/x-icon" href="./favicon/favicon.ico" />
+	</head>
 
-<body>
-  <div id="container">
-    <div class="item header">
-        <span style="font-family: script-chn; font-size: 2rem">符合《圣经》原意的标题</span>
-    </div>
-    <div class="item left">left</div>
-    <div class="item center">
-        <!-- <img src="./img/key.png" alt=""> -->
-    </div>
-    <div class="item right">right</div>
-    <!-- <div class="item footer">
-        AI를 사용한 아닌다. 모든 권리 보유. crucysm @2026 written by 
-        <span style="font-family: script-chn; font-size: 2.6rem; color: var(--c2);">落希</span>
-    </div> -->
-    <div class="item footer">
-        AI를 사용한 아닌다. 모든 권리 보유. crucysm @2026 written by 
-        <span style="font-family: script-chn; font-size: 2rem; color: white;">銀夕</span>
-    </div>
-  </div>
+	<body>
+		<section class="header">
+			<div class="identify">
+				<!-- logo -->
+				<!-- translated design blog -->
+			</div>
+			<ul class="navigation">
+				<a href="#"><li data-i18n="nav1"></li></a>
+				<a href="#"><li data-i18n="nav2"></li></a>
+				<a href="#"><li data-i18n="nav3"></li></a>
+			</ul>
+			<div class="language-selector">
+				<button data-lang="vi">vi</button>
+				<button data-lang="en">en</button>
+				<button data-lang="zh">中</button>
+				<button data-lang="ko">한</button>
+			</div>
+		</section>
+		<section class="breadcrumb"></section>
+		<!-- <section class="sidebar">
+			<div class="tableheader"></div>
+			
+		</section> -->
+		<section class="content"></section>
 
-
-  <!-- <script src="./js/app.js"></script> -->
-  <!-- SWITCH LANGUAGES -->
-   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script>
-  $('[lang]').hide(); // hide all lang attributes on start.
-  $('[lang="en"]').show(); // show just Korean text (you can change it)
-  $('#lang-switch').change(function () { // put onchange event when user select option from select
-      var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
-      switch (lang) {
-          case 'en':
-              $('[lang]').hide();
-              $('[lang="en"]').show();
-          break;
-          case 'ko':
-              $('[lang]').hide();
-              $('[lang="ko"]').show();
-          break;
-          default:
-              $('[lang]').hide();
-              $('[lang="ko"]').show();
-          }
-  });
-  </script>
-</body>
+		<!-- <script src="./js/app.js"></script> -->
+		<!-- SWITCH LANGUAGES -->
+		<script src="/js/jquery-2.2.4.min.js" rel="preload" as="script"></script>
+		<script src="/js/app.js" rel="preload" as="script"></script>
+	</body>
 </html>
