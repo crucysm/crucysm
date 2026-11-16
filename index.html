@@ -1,56 +1,66 @@
 <!doctype html>
 <html lang="vi">
-	<head>
-		<!-- meta -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>prototype--261110</title>
-		<meta name="author" content="lqhuij" />
-		<meta name="description" content="design ethinicity" />
-		<!-- css -->
-		<link href="./css/main.css" media="screen" rel="stylesheet" type="text/css" />
-		<link rel="icon" type="image/x-icon" href="./favicon/favicon.ico" />
-	</head>
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prototype--261110</title>
+    <meta name="author" content="lqhuij" />
+    <meta name="description" content="design ethinicity" />
+    <!-- css -->
+    <link
+      href="./css/main.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico" />
+  </head>
 
-	<body>
-		<section class="header">
-			<div class="identity">
-				<!-- logo -->
-				<!-- translated design blog -->
-				<a href="./index.html">CRUCYSM</a>
-				<a href="./index.html" class="site" data-i18n="site"></a>
-			</div>
-			<ul class="navigation">
-				<a href="#"><li data-i18n="nav1"></li></a>
-				<a href="#"><li data-i18n="nav2"></li></a>
-				<a href="#"><li data-i18n="nav3"></li></a>
-			</ul>
-			<div class="language-selector">
-				<button data-lang="vi">vi</button>
-				<button data-lang="en">en</button>
-				<button data-lang="zh">中</button>
-				<button data-lang="ko">한</button>
-			</div>
-		</section>
-		<section class="breadcrumb">
-			<a href="#" class="prev" data-i18n="prev"></a>
-			<h3 data-i18n="category"></h3>
-			<a href="#" class="next" data-i18n="next"></a>
-		</section>
-		<!-- <section class="sidebar">
+  <body>
+    <section class="header">
+      <div class="identity">
+        <!-- logo -->
+        <!-- translated design blog -->
+        <a href="./index.html">CRUCYSM</a>
+        <a href="./index.html" class="site" data-i18n="site"></a>
+      </div>
+      <ul class="navigation">
+        <a href="#"><li data-i18n="nav1"></li></a>
+        <a href="#"><li data-i18n="nav2"></li></a>
+        <a href="#"><li data-i18n="nav3"></li></a>
+      </ul>
+      <div class="language-selector">
+        <button data-lang="vi">vi</button>
+        <button data-lang="en">en</button>
+        <button data-lang="zh">中</button>
+        <button data-lang="ko">한</button>
+      </div>
+    </section>
+    <section class="breadcrumb">
+      <a href="#" class="prev" data-i18n="prev"></a>
+      <h3 data-i18n="category"></h3>
+      <a href="#" class="next" data-i18n="next"></a>
+    </section>
+    <!-- <section class="sidebar">
 			<div class="tableheader"></div>
 			
 		</section> -->
-		<section class="hero">
-			<h2 data-i18n="de"></h2>
-			<h1 data-i18n="article"></h1>
-			<p data-i18n="herocontent"></p>
-			<h2 data-i18n="count"></h2>
-		</section>
-		<section class="wrapper"></section>
-		<!-- <script src="./js/app.js"></script> -->
-		<!-- SWITCH LANGUAGES -->
-		<script src="/js/jquery-2.2.4.min.js" rel="preload" as="script"></script>
-		<script src="/js/app.js" rel="preload" as="script"></script>
-	</body>
+    <section class="hero">
+      <h2 data-i18n="de"></h2>
+      <h1 data-i18n="article"></h1>
+      <p class="herocontent" data-i18n="herocontent"></p>
+      <h2 data-i18n="count"></h2>
+    </section>
+    <section class="wrapper">
+      <button class="toc"></button>
+      <div class="table"></div>
+      <div class="content">
+        <p data-i18n="content"></p>
+      </div>
+    </section>
+    <!-- SWITCH LANGUAGES -->
+    <script src="/js/jquery-2.2.4.min.js" rel="preload" as="script"></script>
+    <script src="/js/app.js" rel="preload" as="script"></script>
+  </body>
 </html>
