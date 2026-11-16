@@ -1,19 +1,40 @@
+// css must have [data-i18n] {white-space: pre-line;} for \n to work properly
 const translations = {
     vi: {
-        heroTitle: "van mau",
-        heroText: "thu nghiem ngay 14-11-2026."
+        site: "PHƯƠNG PHÁP LUẬN",
+        nav1: "van mau",
+        nav2: "thu nghiem ngay 14-11-2026.",
+        nav3: "延伸",
+        prev: "↼ 前一篇",
+        next: "后一篇 ⇁",
+        category: "紫微斗数捷览",
+        article: "tiêu đề",
+        de: "宋代·明辑 · 题[宋]陈希夷撰、[宋]白玉蟾增辑；明刊孤本，心一堂术数古籍整理编校小组点校",
+        herocontent: "紫微斗数最早文献之孤本，明万历九年金陵书坊王氏洛川刊本。卷之一备列安星诸诀\n安身命、安紫府、布南北二斗、安四化及诸杂曜）卷之二论诸星庙陷生克制化与看命捷法、\n身命十二宫吉凶便览、流年太岁吉凶；卷之三收斗数指南、骨髓赋注解、女命骨髓赋注解与定富贫贱各局；\n卷之四分述十四正曜及各杂曜星论、入命入限吉凶；卷之五增补诸篇赋文断诀。较《紫微斗数全书》更为古远，\n倪海厦《天纪》体系可互为参证。",
+        count: "共 23 节 · 逐段可检索"
     },
     en: {
-        heroTitle: "translated example",
-        heroText: "prototype nov-14-26."
+        site: "METHODOLOGY",
+        nav1: "translated example",
+        nav2: "prototype nov-14-26."
     },
     zh: {
-        heroTitle: "示例",
-        heroText: "原型."
+        site: "設計 方法論",
+        nav1: "示例",
+        nav2: "原型",
+        nav3: "延伸",
+        prev: "↼ 前一篇",
+        next: "后一篇 ⇁",
+        category: "紫微斗数捷览",
+        article: "文章标题",
+        de: "宋代·明辑 · 题[宋]陈希夷撰、[宋]白玉蟾增辑；明刊孤本，心一堂术数古籍整理编校小组点校",
+        herocontent: "紫微斗数最早文献之孤本，明万历九年金陵书坊王氏洛川刊本。卷之一备列安星诸诀\n安身命、安紫府、布南北二斗、安四化及诸杂曜）卷之二论诸星庙陷生克制化与看命捷法、\n身命十二宫吉凶便览、流年太岁吉凶；卷之三收斗数指南、骨髓赋注解、女命骨髓赋注解与定富贫贱各局；\n卷之四分述十四正曜及各杂曜星论、入命入限吉凶；卷之五增补诸篇赋文断诀。较《紫微斗数全书》更为古远，\n倪海厦《天纪》体系可互为参证。",
+        count: "共 23 节 · 逐段可检索"
     },
     ko: {
-        heroTitle: "예시",
-        heroText: "프로토타입 십사일 십일월 이십유년."
+        site: "디자인의 방법론",
+        nav1: "예시",
+        nav2: "프로토타입 십사일 십일월 이십유년."
     }
 };
 
