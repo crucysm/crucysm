@@ -74,7 +74,6 @@ h1:lang(vi) {
 }
 
 h1:lang(zh) {
-	font-weight: bold;
 	font-family: "script-zh", serif;
 	font-size: 5rem;
 	z-index: 1;
@@ -82,16 +81,19 @@ h1:lang(zh) {
 }
 
 h1:lang(zh)::after {
-	content: "TIÊU·ĐỀ";
+	width: 100vw;
+	content: "T I Ê U Đ Ề";
 	font-family: "caps", sans-serif;
 	font-size: 8rem;
 	position: absolute;
 	text-align: center;
+	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: -1;
 	color: var(--a0);
-	letter-spacing: 3rem;
+	/* letter-spacing: 3rem; */
+	text-justify: inter-word;
 }
 
 h2 {

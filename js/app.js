@@ -75,7 +75,7 @@ document.querySelectorAll(".language-selector button").forEach((button) => {
 
 // check saved lang choice
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("preferredLang") || "vi";
+  const savedLang = localStorage.getItem("preferredLang") || "zh";
   switchLanguage(savedLang);
 });
 
@@ -90,10 +90,10 @@ function getInitialLanguage() {
   // detect
   const browserLang = navigator.language
     ? navigator.language.slice(0, 2)
-    : "vi";
+    : "zh";
   if (translations[browserLang]) {
     return browserLang;
   }
 
-  return "vi";
+  return "zh";
 }
