@@ -27,7 +27,7 @@ const translations = {
     nav3: "延伸",
     prev: "↼ 前一篇",
     next: "后一篇 ⇁",
-    tocbutton: "目\n录\n👁",
+    tocbutton: "目\n录",
     toctitle: "目录",
     category: "紫微斗数捷览",
     article: "« 文章标题 »",
