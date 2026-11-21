@@ -70,7 +70,7 @@ function switchLanguage(lang) {
     showOnlyLang(lang);
 }
 
-// eventlistener for buttons
+// eventlistener for language-selector buttons
 document.querySelectorAll(".language-selector button").forEach((button) => {
   button.addEventListener("click", (event) => {
     const selectedLang = event.target.getAttribute("data-lang");

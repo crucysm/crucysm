@@ -151,6 +151,7 @@ p:lang(zh) {
 	--a1: #c8b799;
 	--a2: #d6c189;
 	--a3: #b8912f;
+	--a4: #447770;
 	--bg: #cfcfcf;
 	--b1: #f5f1e6;
 	--b2: #b8912f;
@@ -347,7 +348,7 @@ section {
 }
 
 .breadcrumb a:hover {
-	color: var(--c0);
+	color: var(--a4);
 	transition: ease 0.15s;
 }
 
@@ -421,6 +422,7 @@ section {
 
 .table ul li:hover {
 	background-color: var(--b1);
+	color: var(--a4);
 }
 
 /* ARTICLE */
@@ -489,7 +491,7 @@ article p:lang(zh) {
 
 .footer a {
 	font-size: 1.2rem;
-	color: var(--c2);
+	color: var(--a4);
 	font-weight: normal;
 	letter-spacing: 2px;
 	width: fit-content;
