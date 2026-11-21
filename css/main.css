@@ -48,6 +48,7 @@
 @font-face {
 	font-family: "script-zh";
 	src: url("../font/GSKA00B.woff");
+	font-display: swap; /* fix jagged/bold font rendering */
 }
 
 @font-face {
