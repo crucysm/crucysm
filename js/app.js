@@ -36,7 +36,8 @@ const translations = {
       "紫微斗数最早文献之孤本 ，明万历九年金陵书坊王氏洛川刊本 。卷之一备列安星诸诀\n安身命 、安紫府 、布南北二斗 、安四化及诸杂曜）卷之二论诸星庙陷生克制化与看命捷法 、\n身命十二宫吉凶便览、流年太岁吉凶；卷之三收斗数指南、骨髓赋注解、女命骨髓赋注解与定富贫贱各局；\n卷之四分述十四正曜及各杂曜星论、入命入限吉凶；卷之五增补诸篇赋文断诀。较《紫微斗数全书》更为古远，\n倪海厦《天纪》体系可互为参证。",
     count: "共 23 节 · 逐段可检索",
     backtotop: "↑ 回到卷首",
-    footer1: "©2026 prototype。这些文章由",
+    footer0: "©2026 prototype",
+    footer1: "。这些文章由",
     footer2: "编写及编辑，并将定期更新。"
   },
   ko: {
@@ -66,6 +67,7 @@ function switchLanguage(lang) {
       button.classList.remove("active");
     }
   });
+    showOnlyLang(lang);
 }
 
 // eventlistener for buttons
@@ -99,4 +101,11 @@ function getInitialLanguage() {
   }
 
   return "zh";
+}
+
+// show only paragraph and header in current selected lang
+function showOnlyLang(selectedLang) {
+    document.querySelectorAll("p[lang], h4[lang]").forEach(el => {
+        el.style.display = el.getAttribute("lang") === selectedLang ? "" : "none";
+    });
 }

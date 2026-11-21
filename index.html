@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 	<head>
 		<!-- meta -->
 		<meta charset="UTF-8" />
@@ -18,13 +18,13 @@
 			<div class="identity">
 				<!-- logo -->
 				<!-- translated design blog -->
-				<a href="./index.html">CRUCYSM</a>
+				<a href="./index.html" class="crucysm">CRUCYSM</a>
 				<a href="./index.html" class="site" data-i18n="site"></a>
 			</div>
 			<ul class="navigation">
-				<a href="#"><li data-i18n="nav1"></li></a>
-				<a href="#"><li data-i18n="nav2"></li></a>
-				<a href="#"><li data-i18n="nav3"></li></a>
+				<li data-i18n="nav1" onclick="location.href = '#'"></li>
+				<li data-i18n="nav2" onclick="location.href = '#'"></li>
+				<li data-i18n="nav3" onclick="location.href = '#'"></li>
 			</ul>
 			<div class="language-selector">
 				<button data-lang="vi">vi</button>
@@ -38,7 +38,7 @@
 			<h3 data-i18n="category"></h3>
 			<a href="#" class="next" data-i18n="next"></a>
 		</section>
-		<section class="hero">
+		<section class="hero" id="top">
 			<h2 data-i18n="de"></h2>
 			<h1 data-i18n="article"></h1>
 			<p class="herocontent" data-i18n="herocontent"></p>
@@ -49,18 +49,20 @@
 			<div class="table card">
 				<h2 data-i18n="toctitle"></h2>
 				<ul>
-					<a href="#fo"><li>章</li></a>
-					<a href="#fo"><li>章</li></a>
-					<a href="#fo"><li>章</li></a>
-					<a href="#fo"><li>章</li></a>
-					<a href="#fo"><li>章</li></a>
-					<a href="#fo"><li>章</li></a>
-					<a href="#fo"><li>章</li></a>
+					<a href="#fo"><li>章 · 1 ·</li></a>
+					<a href="#f1"><li>章</li></a>
+					<a href="#f2"><li>章</li></a>
+					<a href="#f3"><li>章</li></a>
+					<a href="#f4"><li>章</li></a>
+					<a href="#f5"><li>章</li></a>
+					<a href="#f6"><li>章</li></a>
 				</ul>
 			</div>
 			<article class="content card">
-				<!-- <p data-i18n="content"></p> -->
+				<h4 lang="zh">弁言</h4>
+				<h4 lang="en">Header</h4>
 				<p lang="zh">《新刻纂集紫微斗数捷览》。题[宋]陈希夷撰、[宋]白玉蟾增辑。四卷。线装四册。</p>
+				<p lang="en">Check switch language function.</p>
 				<p lang="zh">[明]万历九年金陵书坊王氏洛川刊本原书签跋云：[此书传本甚希，万历刻尤罕见，不得不重宝之]，此本迄今已逾四百年，为海内孤本，文献价值之珍稀不言而喻。</p>
 				<p lang="zh">紫微斗数，国学术数星命学之一种也。此术源于五星术，五星术盛于唐，至宋而衰，至民国废钦天监，殆亡。而此术于门中秘传，逮明方兴，大抵以虚拟十四正曜及诸辅曜杂曜罗布十二宫，循命限流年宫位顺次推衍而占人之祸福休咎。虽不明其所以，然颇有识验，故迄今与四柱并行，流行港台。惜此术传嗣未广，典籍零落，学者无所稽考，坊间流传民国以前的紫微斗数刻本古籍，只见《紫微斗数全书》及《紫微斗数全集》两种而已。</p>
 				<p lang="zh">而本书实涉关斗数之最古文献，是以原校者冯一先生苦心瘁力，奔营求索多年，终于己丑孟秋获得，费时耗日，辨识戡研，至辛卯仲春初稿竟全功，不负先圣之所传。后来心一堂术数古籍整理编校小组在冯一先生初稿基础上，再据虚白庐藏紫微斗数古本重新校注及整理又数年，才最终定稿。并书校记如下。" 兆以個犬園肖王澡燈杯禾新真行由朱欠再訴！飛害姐乾師里假亭貓、間能故皮八貫信停中神哭鳥用背拍下，節禾六，己交只點視，十面晚，肖和問里。</p>
@@ -70,8 +72,8 @@
 			</article>
 		</section>
 		<section class="footer">
-			<a href="#"><h2 data-i18n="backtotop"></h2></a>
-			<p><span data-i18n="footer1"></span><span class="producertag">落熹</span><span data-i18n="footer2"></span></p>
+			<a href="#top" data-i18n="backtotop"></a>
+			<p><span data-i18n="footer0" class="footer0"></span><span data-i18n="footer1"></span><span class="producertag">落熹</span><span data-i18n="footer2"></span></p>
 		</section>
 		<!-- SWITCH LANGUAGES -->
 		<script src="./js/jquery-2.2.4.min.js" rel="preload" as="script"></script>
