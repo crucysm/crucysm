@@ -29,6 +29,7 @@ const translations = {
     next: "后一篇 ⇁",
     tocbutton: "目\n录",
     toctitle: "目录",
+    chapter: "章",
     category: "紫微斗数捷览",
     article: "« 文章标题 »",
     de: "宋代 · 明辑 · 题[宋]陈希夷撰 、[宋]白玉蟾增辑；明刊孤本 ，心一堂术数古籍整理编校小组点校",

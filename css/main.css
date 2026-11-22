@@ -398,10 +398,16 @@ section {
 }
 
 .table {
-	width: 25%;
+	flex: 0.25;
 	height: auto;
 	padding-left: 2rem;
 	text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.table {
+		display: none;
+	}
 }
 
 .table h2::after {
@@ -429,6 +435,7 @@ section {
 
 article {
 	flex: 1;
+	/* display: none; */
 }
 
 article p {
