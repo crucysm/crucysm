@@ -115,6 +115,7 @@ h4 {
 	font-family: sans-serif;
 	letter-spacing: 2px;
 	position: relative;
+	text-indent: 2rem;
 }
 
 /* h4::before {
@@ -143,6 +144,8 @@ p:lang(zh) {
 	text-align: justify;
 	font-size: 1.2rem;
 	letter-spacing: 1px;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
 }
 
 /* CSS Document */
@@ -165,6 +168,10 @@ p:lang(zh) {
 	color: var(--a3);
 	background-color: var(--b1);
 	/* text-shadow: 1px 2px 0px var(--a0); */
+}
+
+:target {
+	scroll-margin-top: 14.5rem;
 }
 
 * {
@@ -399,9 +406,11 @@ section {
 
 .table {
 	flex: 0.25;
-	height: auto;
+	height: fit-content;
 	padding-left: 2rem;
 	text-align: center;
+	position: sticky;
+	top: 13rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -471,6 +480,7 @@ article p:lang(zh) {
 	flex-direction: column;
 	border-radius: 3px;
 	transition: ease 0.35s;
+	z-index: 3;
 }
 
 .toc::before,
@@ -514,7 +524,6 @@ article p:lang(zh) {
 }
 
 .footer p {
-	margin-top: 3rem;
 	color: var(--c2);
 	background-color: var(--c0);
 	text-align: center;
