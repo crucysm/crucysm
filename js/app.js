@@ -43,6 +43,7 @@ const translations = {
     p5: "親枝",
     p6: "兩菜",
     p7: "久衣羽羊",
+    img1: "IMG. Lemme check",
     backtotop: "↑ 回到卷首",
     footer0: "©2026 prototype",
     footer1: "。这些文章由",
